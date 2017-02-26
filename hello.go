@@ -15,6 +15,17 @@ const (
 	Ship = iota // this marks as changeable
 )
 
+//enum
+const (
+	A = iota
+	B
+	C
+)
+
+func PrintsGreeting (wc WingCommander) {
+	fmt.Println(wc.name, wc.callsign, Ship)
+}
+
 func main() {
 	
 	// declare variable, name symbol, declare type
@@ -39,5 +50,5 @@ func main() {
 	// pointer initialisation
 	var bling *string = &message
 	fmt.Println(message, ShipIda, ShipIdb, ShipIdc, bling, myStreng)
-	fmt.Println(commander.name, commander.callsign, Ship)
+	PrintsGreeting(commander)
 }
