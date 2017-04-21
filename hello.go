@@ -2,7 +2,7 @@ package main
  
 import "fmt"
 
-type streng string
+type streng string 
 
 type WingCommander struct {
 	name string
