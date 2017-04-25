@@ -8,7 +8,7 @@ type WingCommander struct {
 	name string
 	callsign string
 }
- 
+
 const (
 	StarSystem = "vega"
 	Enemy = "Kilrathi"
